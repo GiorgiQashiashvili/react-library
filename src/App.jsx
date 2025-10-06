@@ -1,4 +1,5 @@
 import Center from "./components/Center"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
       <Center />
 
+      <Footer />
     </div>
   )
 }

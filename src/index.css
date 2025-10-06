@@ -193,33 +193,106 @@ button {
   gap: 30px;
 }
 
-.collection-main{
+.collection-main {
   display: flex;
   flex-direction: column;
-gap: 20px;
+  gap: 20px;
 }
 
-.collection-title{
+.collection-title {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.collection-title p{
+.collection-title p {
   color: #6e6e6e;
 }
 
-.collection-content{
+.collection-content {
   display: flex;
   gap: 25px;
 }
 
-.employment h3{
-position: absolute;
-padding: 30px;
+.employment h3 {
+  position: absolute;
+  padding: 30px;
 }
 
-.employment img{
+.employment img {
   width: 250px;
   border-radius: 8px;
+}
+
+.footer-main {
+  padding: 40px;
+  background-color: #11284b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-main h1 {
+  font-size: 50px
+}
+
+.footer-links {
+  display: flex;
+  gap: 15%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.twiter {
+  color: aqua;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.instagram {
+  color: red;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.linkdin {
+  color: #11284b;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.youtube {
+  color: red;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
