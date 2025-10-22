@@ -1,4 +1,5 @@
-import Resources from "./ Resources"
+import images from "../data/images"
+import Resources from "../components/Resources"
 
 function Library() {
     return (
@@ -18,17 +19,13 @@ function Library() {
 
             <div className="all-resources">
 
-                <div className="line1">
-                    <Resources />
-                    <Resources />
-                    <Resources />
-                </div>
-
-                <div className="line1">
-                    <Resources />
-                    <Resources />
-                    <Resources />
-                </div>
+                {images.map((image) => {
+                    return <Resources
+                        key={image.id}
+                        img={image.img}
+                        name={image.name}
+                    />
+                })}
 
             </div>
 

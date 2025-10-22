@@ -51,9 +51,11 @@ button {
 
 .header-btn button {
   background-color: #f6f6eb;
-  border: none;
+  border: 1px solid #381fd1;
+  border-radius: 8px;
   color: #381fd1;
   text-transform: uppercase;
+  padding: 5px;
 }
 
 .free-trial-btn button {
@@ -102,6 +104,8 @@ button {
   border: 1px solid #ccc;
   height: 35px;
   border-radius: 5px;
+  outline: none;
+  padding: 10px;
 }
 
 .left-links {
@@ -179,17 +183,11 @@ button {
 .resource-photo img {
   width: 40px;
   border: 1px solid #ccc;
-  padding: 3px;
 }
 
 .all-resources {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.line1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -295,4 +293,250 @@ button {
   justify-content: center;
   width: 30px;
   height: 30px;
+}
+
+.login-main {
+  background-color: #f6f6eb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #381fd1;
+  color: white;
+}
+
+.login-txt {
+  border-bottom: 1px solid #ccc;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+
+.login-input input {
+  width: 300px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-btn button {
+  width: 300px;
+  background: transparent;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-btn button:hover {
+  background-color: #ccc;
+  transition: ease-in 0.3s;
+}
+
+.login-links {
+  display: flex;
+  gap: 10px;
+}
+
+.free-trial-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6eb;
+  gap: 50px;
+}
+
+.trial-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trial-right h1 {
+  font-size: 50px;
+}
+
+.trial-right p {
+  font-size: 20px;
+}
+
+.trial-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .header-div {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 50px;
+  }
+
+  .links {
+    font-size: 12px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-btn {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+  }
+
+  .header-btn button {
+    font-size: 12px;
+  }
+
+  .free-trial-btn {
+    position: absolute;
+    top: 50px;
+  }
+
+  .center-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .center-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .search input {
+    width: 320px;
+  }
+
+  .left-links {
+    display: flex;
+    gap: 10px
+  }
+
+  .left-links select {
+    font-size: 13px;
+    width: 320px;
+  }
+
+  .contribute-stark {
+    width: 320px;
+    text-align: center;
+  }
+
+  .center-div {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .all-resources {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .resource-main {
+    width: 160px;
+    display: flex;
+  }
+
+  .collection-main {
+    display: flex;
+    gap: 20px;
+  }
+
+  .collection-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-main {
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-title h1 {
+    font-size: 22px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .product {
+    display: flex;
+    gap: 15px;
+  }
+
+  .login-links {
+    font-size: 12px;
+  }
+
+  .combos h3 {
+    position: absolute;
+    top: 250%;
+    padding: 0px 30px;
+  }
+  .free-trial-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .trial-right{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .trial-right p{
+    font-size: 15px;
+  }
+  .trial-right h1{
+    font-size: 20px;
+  }
+  .trial-txt {
+    display: flex;
+    gap: 5px;
+  }
+  .trial-left{
+    margin-top: 150px;
+  }
 }

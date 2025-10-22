@@ -28,7 +28,7 @@ function Center() {
                         or news?
                     </p>
 
-                    <button className="submit-btn">Submit a Recource</button>
+                    <button className="submit-btn">Submit a Resource</button>
                 </div>
             </div>
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Header() {
     return (
         <div className="header-div">
@@ -16,11 +18,15 @@ function Header() {
             </div>
 
             <div className="header-btn">
-                <button>log in</button>
+                <Link to={"login"}>
+                    <button>log in</button>
+                </Link>
             </div>
 
             <div className="free-trial-btn">
-                <button>30-day free team trial</button>
+                <Link to={"freetrial"}>
+                    <button>30-day free team trial</button>
+                </Link>
             </div>
 
         </div>
